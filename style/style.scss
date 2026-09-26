@@ -1,0 +1,120 @@
+$light-color: #747474;
+$text-light-color: #f2f2f2;
+$text-dark-color: #333;
+$bg-light-color: #fdfdfd;
+$color-light: #ececec;
+$color-dark: #c5c5c5;
+
+
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+    direction: ltr;
+}
+
+
+
+
+header {
+
+    background-color: $light-color;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px;
+}
+
+main {
+
+    section {
+
+        box-shadow: 0px 0px 10px #333;
+        padding: 0px 5px;
+
+        aside {
+
+            box-shadow: 0px 0px 3px $color-dark;
+
+            h3{
+
+                padding: 10px;
+            }
+
+            h3:hover{
+
+                background-color: $color-dark;
+            }
+
+            #accordion{
+
+                background-color: #333;
+            }
+
+            #accordion:hover{
+
+
+                background-color: $text-dark-color;
+            }
+
+            span{
+
+                color: #38c438;
+            }
+
+            ul{
+
+                list-style: none;
+                padding: 0;
+            }
+        }
+
+        article {
+
+            padding: 30px 0px;
+
+            figure>img {
+
+            width: 15%;
+            border-radius: 4px;
+        }
+
+        h6 {
+
+            color: $light-color;
+            font-size: 17px;
+        }
+
+         h5 {
+
+            color: $text-dark-color;
+        }
+
+        a {
+
+            background-color: $color-light;
+            padding: 8px;
+            border-radius: 2px;
+            color: $text-dark-color;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0px;
+
+        }
+
+        a:hover {
+
+            background-color: $color-dark;
+        }
+
+        a>i {
+
+            margin: 0px 15px;
+        }
+
+        }
+    }
+
+}

@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "RobotoDraft", "Roboto", sans-serif;
+  direction: ltr;
+}
+
+header {
+  background-color: #747474;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px;
+}
+
+main section {
+  -webkit-box-shadow: 0px 0px 10px #333;
+          box-shadow: 0px 0px 10px #333;
+  padding: 0px 5px;
+}
+
+main section aside {
+  -webkit-box-shadow: 0px 0px 3px #c5c5c5;
+          box-shadow: 0px 0px 3px #c5c5c5;
+}
+
+main section aside h3 {
+  padding: 10px;
+}
+
+main section aside h3:hover {
+  background-color: #c5c5c5;
+}
+
+main section aside #accordion {
+  background-color: #333;
+}
+
+main section aside #accordion:hover {
+  background-color: #333;
+}
+
+main section aside span {
+  color: #38c438;
+}
+
+main section aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+main section article {
+  padding: 30px 0px;
+}
+
+main section article figure > img {
+  width: 15%;
+  border-radius: 4px;
+}
+
+main section article h6 {
+  color: #747474;
+  font-size: 17px;
+}
+
+main section article h5 {
+  color: #333;
+}
+
+main section article a {
+  background-color: #ececec;
+  padding: 8px;
+  border-radius: 2px;
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0px;
+}
+
+main section article a:hover {
+  background-color: #c5c5c5;
+}
+
+main section article a > i {
+  margin: 0px 15px;
+}
+/*# sourceMappingURL=style.css.map */
