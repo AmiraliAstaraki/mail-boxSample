@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "RobotoDraft", "Roboto", sans-serif;
   direction: ltr;
 }
@@ -14,60 +15,84 @@ header {
 }
 
 main section#container aside {
-  box-shadow: 0px 0px 3px #c5c5c5;
+  -webkit-box-shadow: 0px 0px 3px #c5c5c5;
+          box-shadow: 0px 0px 3px #c5c5c5;
 }
+
 main section#container aside img {
   display: block;
   width: 60%;
 }
+
 main section#container aside p > a {
   padding: 20px;
   display: block;
 }
+
 main section#container aside p > a:hover {
   background-color: #c5c5c5;
 }
+
 main section#container aside #modal {
   background-color: #5c5c5c;
   padding: 20px;
-  color: #f2f2f2;
+  color: #fff;
 }
-main section#container aside div.modal-dialog {
-  width: 900px;
+
+main section#container aside .modal-head-bg {
+  background-color: #ff0000;
+  color: #fff;
 }
+
+main section#container aside .modal-foot {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 main section#container aside div.modal-body input {
   border: 1px solid #c5c5c5;
 }
+
 main section#container aside input.desc {
   height: 150px;
 }
+
 main section#container aside #modal:hover {
   background-color: #222222;
 }
+
 main section#container aside #modal i {
   margin-left: 15px;
 }
+
 main section#container aside span {
   color: #38c438;
 }
+
 main section#container aside ul {
   list-style: none;
   padding: 0;
 }
+
 main section#container article {
   padding: 25px 15px;
 }
+
 main section#container article figure > img {
   width: 20%;
   border-radius: 4px;
 }
+
 main section#container article h6 {
   color: #747474;
   font-size: 17px;
 }
+
 main section#container article h5 {
   color: #333;
 }
+
 main section#container article a {
   background-color: #ececec;
   padding: 8px;
@@ -77,9 +102,12 @@ main section#container article a {
   display: inline-block;
   margin: 10px 0px;
 }
+
 main section#container article a:hover {
   background-color: #c5c5c5;
 }
+
 main section#container article a > i {
   margin: 0px 15px;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
