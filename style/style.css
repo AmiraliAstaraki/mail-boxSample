@@ -39,15 +39,53 @@ main section#container aside #modal {
   color: #fff;
 }
 
-main section#container aside .modal-head-bg {
+main section#container aside .modal-head {
   background-color: #ff0000;
   color: #fff;
+}
+
+main section#container aside .button-accordion {
+  border: none;
+}
+
+main section#container aside div.accord a {
+  color: #333;
+  text-decoration: none;
+}
+
+main section#container aside div.accord a > i {
+  margin-right: 10px;
 }
 
 main section#container aside .modal-foot {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+main section#container aside .modal-foot button.cancel-btn {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 7px;
+  width: 90px;
+}
+
+main section#container aside .modal-foot button.cancel-btn:hover {
+  background-color: #c5c5c5;
+  color: #333;
+}
+
+main section#container aside .modal-foot button.send-btn {
+  background-color: #ececec;
+  border: none;
+  padding: 7px;
+  width: 90px;
+}
+
+main section#container aside .modal-foot button.send-btn:hover {
+  background-color: #c5c5c5;
+  color: #333;
 }
 
 main section#container aside div.modal-body input {

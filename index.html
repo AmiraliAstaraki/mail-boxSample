@@ -33,7 +33,7 @@
 
                 <ul>
                     <li>
-                        
+
                         <!-- Button trigger modal -->
                         <section type="button" id="modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             New Message<i class="bi bi-pen-fill"></i>
@@ -44,9 +44,9 @@
                             aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <div class="modal-header modal-head-bg">
+                                    <div class="modal-header modal-head">
                                         <h1 class="modal-title" id="exampleModalLabel">Send Mail</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        <button type="button" class="btn-close button-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
@@ -56,24 +56,26 @@
                                         <input class="d-block w-100 mb-3 p-1" type="email" id="from">
                                         <label class="" for="Subject">Subject</label>
                                         <input class="d-block w-100 mb-3 p-1" type="email" id="Subject">
-                                        <input class="desc d-block w-100 mb-3 px-2" type="text" placeholder="What's on your mind?">
+                                        <input class="desc d-block w-100 mb-3 px-2" type="text"
+                                            placeholder="What's on your mind?">
                                     </div>
                                     <div class="modal-footer modal-foot">
-                                        <button type="button" class="cancel butn"
+                                        <button type="button" class="cancel butn cancel-btn"
                                             data-bs-dismiss="modal">Cancel</button>
-                                        <button type="button" class="send butn">Send</button>
+                                        <button type="button" class="send butn send-btn">Send</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion accord" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Accordion Item #1
+                                    <button class="accordion-button button-accordion" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Inbox (3)
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
@@ -92,14 +94,54 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button button-accordion" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <a href=" #"><i class="bi bi-send-fill"></i>Sent</a>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button button-accordion" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <a href="#"><i class="bi bi-hourglass-bottom"></i>Drafts</a>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    
+                                </div>
+                            </div>
+
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button button-accordion" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <a href="#"><i class="bi bi-trash3-fill"></i>Trash</a>   
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                </div>
+                            </div>
                         </div>
                         </div>
                         </div>
                     </li>
-                    <li><a href=" #"><i class="bi bi-send-fill"></i>Sent</a>
+                    <li>
                     </li>
-                    <li><a href="#"><i class="bi bi-hourglass-bottom"></i>Drafts</a></li>
-                    <li><a href="#"><i class="bi bi-trash3-fill"></i>Trash</a></li>
+                    <li></li>
+                    <li></li>
                 </ul>
 
             </aside>

@@ -45,15 +45,63 @@ main {
         color: $text-light-color;
       }
 
-      .modal-head-bg{
+      .modal-head{
 
         background-color: $modal-header;
         color: $text-light-color;
       }
 
+      .button-accordion{
+
+        border: none;
+      }
+
+      div.accord a{
+
+        color: $text-dark-color;
+        text-decoration: none;
+      }
+
+      div.accord a>i{
+
+        margin-right: 10px;
+      }
+
+      
+
       .modal-foot{
 
         justify-content: space-between;
+      }
+
+      .modal-foot button.cancel-btn{
+
+
+        background-color: $modal-header;
+        color: $text-light-color;
+        border: none;
+        padding: 7px;
+        width: 90px;
+      }
+      
+      .modal-foot button.cancel-btn:hover{
+
+        background-color: $color-dark;
+        color: $text-dark-color;
+      }
+      .modal-foot button.send-btn{
+        
+        background-color: $color-light;
+        border: none;
+        padding: 7px;
+        width: 90px;
+      }
+
+
+      .modal-foot button.send-btn:hover{
+
+        background-color: $color-dark;
+        color: $text-dark-color;
       }
 
       div.modal-body input {
