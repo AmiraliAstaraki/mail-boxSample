@@ -49,11 +49,6 @@ main section#container aside .modal-header button.button-close {
   height: 40px;
   width: 30px;
   border-radius: 0;
-  margin-right: 5px;
-}
-
-main section#container aside .modal-header button.button-close:hover {
-  background-color: #dadada;
   padding: 10px;
 }
 
