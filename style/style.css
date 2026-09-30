@@ -25,12 +25,11 @@ main section#container aside img {
   width: 60%;
 }
 
-main section#container aside p > a {
+main section#container aside div#w3s {
   padding: 20px;
-  display: block;
 }
 
-main section#container aside p > a:hover {
+main section#container aside div#w3s:hover {
   background-color: #c5c5c5;
 }
 
@@ -65,7 +64,7 @@ main section#container aside div.accord a {
   text-decoration: none;
 }
 
-main section#container aside div.accord a > i {
+main section#container aside div.accord i {
   margin-right: 10px;
 }
 
