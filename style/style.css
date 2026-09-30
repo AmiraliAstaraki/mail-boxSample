@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "RobotoDraft", "Roboto", sans-serif;
   direction: ltr;
 }
@@ -15,122 +14,129 @@ header {
 }
 
 main section#container aside {
-  -webkit-box-shadow: 0px 0px 3px #c5c5c5;
-          box-shadow: 0px 0px 3px #c5c5c5;
+  box-shadow: 0px 0px 3px #c5c5c5;
 }
-
 main section#container aside img {
   display: block;
   width: 60%;
 }
-
 main section#container aside p > a {
   padding: 20px;
   display: block;
 }
-
 main section#container aside p > a:hover {
   background-color: #c5c5c5;
 }
-
 main section#container aside #modal {
   background-color: #5c5c5c;
   padding: 20px;
   color: #fff;
 }
-
-main section#container aside .modal-head {
-  background-color: #ff0000;
+main section#container aside .modal-header {
+  background-color: #ff3a3a;
   color: #fff;
 }
-
 main section#container aside .button-accordion {
   border: none;
 }
-
 main section#container aside div.accord a {
   color: #333;
   text-decoration: none;
 }
-
 main section#container aside div.accord a > i {
   margin-right: 10px;
 }
-
 main section#container aside .modal-foot {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 main section#container aside .modal-foot button.cancel-btn {
-  background-color: #ff0000;
+  background-color: #ff3a3a;
   color: #fff;
   border: none;
   padding: 7px;
   width: 90px;
 }
-
 main section#container aside .modal-foot button.cancel-btn:hover {
   background-color: #c5c5c5;
   color: #333;
 }
-
 main section#container aside .modal-foot button.send-btn {
   background-color: #ececec;
   border: none;
   padding: 7px;
   width: 90px;
 }
-
 main section#container aside .modal-foot button.send-btn:hover {
   background-color: #c5c5c5;
   color: #333;
 }
-
 main section#container aside div.modal-body input {
   border: 1px solid #c5c5c5;
 }
-
 main section#container aside input.desc {
   height: 150px;
 }
-
 main section#container aside #modal:hover {
   background-color: #222222;
 }
-
 main section#container aside #modal i {
   margin-left: 15px;
 }
-
-main section#container aside span {
-  color: #38c438;
-}
-
 main section#container aside ul {
   list-style: none;
   padding: 0;
 }
-
+main section#container aside div.accordion-item {
+  border: none;
+}
+main section#container aside div.accordion-item button.button-accord {
+  background-color: transparent;
+}
+main section#container aside div.accordion-item button.button-accord:hover {
+  background-color: #c5c5c5;
+}
+main section#container aside div.accordion-body img {
+  width: 40px;
+  border-radius: 5px;
+}
+main section#container aside div.accordion-body div#borgemail {
+  background-color: #ececec;
+}
+main section#container aside div.accordion-body div.mailbox {
+  padding: 20px;
+  border-bottom: 1px solid #c5c5c5;
+}
+main section#container aside div.accordion-body div.mailbox div {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+main section#container aside div.accordion-body div.mailbox div h5 {
+  margin-left: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #747474;
+}
+main section#container aside div.accordion-body div.mailbox p {
+  margin: 8px 0px 16px 0px;
+}
+main section#container aside div.accordion-body div:hover {
+  background-color: #ececec;
+}
 main section#container article {
   padding: 25px 15px;
 }
-
 main section#container article figure > img {
   width: 20%;
   border-radius: 4px;
 }
-
 main section#container article h6 {
   color: #747474;
   font-size: 17px;
 }
-
 main section#container article h5 {
   color: #333;
 }
-
 main section#container article a {
   background-color: #ececec;
   padding: 8px;
@@ -140,12 +146,9 @@ main section#container article a {
   display: inline-block;
   margin: 10px 0px;
 }
-
 main section#container article a:hover {
   background-color: #c5c5c5;
 }
-
 main section#container article a > i {
   margin: 0px 15px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

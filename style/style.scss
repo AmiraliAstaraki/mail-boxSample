@@ -45,7 +45,7 @@ main {
         color: $text-light-color;
       }
 
-      .modal-head{
+      .modal-header{
 
         background-color: $modal-header;
         color: $text-light-color;
@@ -124,14 +124,75 @@ main {
         margin-left: 15px;
       }
 
-      span {
-        color: #38c438;
-      }
-
       ul {
         list-style: none;
         padding: 0;
       }
+
+      div.accordion-item{
+
+        border: none;
+
+        button.button-accord{
+
+        background-color: transparent;
+      }
+
+      button.button-accord:hover{
+
+        background-color: $color-dark;
+      }
+      }
+
+      
+
+      div.accordion-body{
+
+        img{
+
+        width: 40px;
+        border-radius: 5px;
+      }
+
+        div#borgemail{
+
+        background-color: $color-light;
+      }
+
+      div.mailbox{
+
+        padding: 20px;
+        border-bottom: 1px solid $color-dark;
+
+        div{
+
+          display: flex;
+            align-items: center;
+          padding: 0;
+
+          h5{
+
+            margin-left: 20px;
+            margin-bottom: 0;
+            text-align: center;
+            color: $light-color;
+          }
+
+        }
+
+        p{
+
+          margin: 8px 0px 16px 0px;
+        }
+
+      }
+
+      div:hover{
+
+        background-color: $color-light;
+      }
+      } 
+
     }
 
     article {
