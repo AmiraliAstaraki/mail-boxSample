@@ -1,49 +1,46 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "RobotoDraft", "Roboto", sans-serif;
   direction: ltr;
+  overflow: hidden;
 }
 
 header {
   background-color: #747474;
   color: #f2f2f2;
   text-align: center;
-  padding: 5px;
+  padding: 12px;
 }
 
+main section#container {
+  height: 100vh;
+}
 main section#container aside {
-  -webkit-box-shadow: 0px 0px 3px #c5c5c5;
-          box-shadow: 0px 0px 3px #c5c5c5;
-  overflow-y: hidden;
+  box-shadow: 0px 0px 10px #c5c5c5;
+  overflow-y: auto;
+  height: 100%;
 }
-
 main section#container aside img {
   display: block;
   width: 60%;
 }
-
 main section#container aside div#w3s {
   padding: 20px;
 }
-
 main section#container aside div#w3s:hover {
   background-color: #c5c5c5;
 }
-
 main section#container aside #modal {
   background-color: #5c5c5c;
   padding: 20px;
   color: #fff;
 }
-
 main section#container aside .modal-header {
   background-color: #ff3a3a;
   color: #fff;
 }
-
 main section#container aside .modal-header button.button-close {
   color: #fff;
   height: 40px;
@@ -51,26 +48,21 @@ main section#container aside .modal-header button.button-close {
   border-radius: 0;
   padding: 10px;
 }
-
-main section#container aside .button-accordion {
-  border: none;
+main section#container aside div.modal-body input {
+  border: 1px solid #c5c5c5;
 }
-
-main section#container aside div.accord a {
-  color: #333;
-  text-decoration: none;
+main section#container aside input.desc {
+  height: 150px;
 }
-
-main section#container aside div.accord i {
-  margin-right: 10px;
+main section#container aside #modal:hover {
+  background-color: #222222;
 }
-
+main section#container aside #modal i {
+  margin-left: 15px;
+}
 main section#container aside .modal-foot {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 main section#container aside .modal-foot button.cancel-btn {
   background-color: #ff3a3a;
   color: #fff;
@@ -78,123 +70,98 @@ main section#container aside .modal-foot button.cancel-btn {
   padding: 7px;
   width: 90px;
 }
-
 main section#container aside .modal-foot button.cancel-btn i {
   margin-left: 5px;
   font-size: 17px;
 }
-
 main section#container aside .modal-foot button.cancel-btn:hover {
   background-color: #c5c5c5;
   color: #333;
 }
-
 main section#container aside .modal-foot button.send-btn {
   background-color: #ececec;
   border: none;
   padding: 7px;
   width: 90px;
 }
-
 main section#container aside .modal-foot button.send-btn i {
   margin-left: 8px;
 }
-
 main section#container aside .modal-foot button.send-btn:hover {
   background-color: #c5c5c5;
   color: #333;
 }
-
-main section#container aside div.modal-body input {
-  border: 1px solid #c5c5c5;
+main section#container aside .button-accordion {
+  border: none;
 }
-
-main section#container aside input.desc {
-  height: 150px;
+main section#container aside div.accord a {
+  color: #333;
+  text-decoration: none;
 }
-
-main section#container aside #modal:hover {
-  background-color: #222222;
+main section#container aside div.accord i {
+  margin-right: 10px;
 }
-
-main section#container aside #modal i {
-  margin-left: 15px;
-}
-
 main section#container aside ul {
   list-style: none;
   padding: 0;
 }
-
 main section#container aside div.accordion-item {
   border: none;
 }
-
 main section#container aside div.accordion-item button.button-accord {
-  background-color: transparent;
+  width: 100%;
 }
-
 main section#container aside div.accordion-item button.button-accord:hover {
   background-color: #c5c5c5;
 }
-
-main section#container aside div.accordion-body img {
+main section#container aside div.accordion-item button.button-accord[aria-expanded=true] {
+  background-color: #ff3a3a;
+  color: #f2f2f2;
+}
+main section#container aside div.accordion-item button.button-accord[aria-expanded=true]:hover {
+  background-color: #c5c5c5;
+  color: #333;
+}
+main section#container aside div.accordion-body div#mailmembers img {
   width: 40px;
   border-radius: 5px;
 }
-
-main section#container aside div.accordion-body div#borgemail {
-  background-color: #ececec;
-}
-
 main section#container aside div.accordion-body div.mailbox {
-  padding: 20px;
+  padding: 15px 30px;
   border-bottom: 1px solid #c5c5c5;
 }
-
 main section#container aside div.accordion-body div.mailbox div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0;
 }
-
 main section#container aside div.accordion-body div.mailbox div h5 {
   margin-left: 20px;
   margin-bottom: 0;
   text-align: center;
   color: #747474;
 }
-
 main section#container aside div.accordion-body div.mailbox p {
   margin: 8px 0px 16px 0px;
 }
-
 main section#container aside div.accordion-body div:hover {
   background-color: #ececec;
 }
-
 main section#container article {
   padding: 25px 15px;
+  overflow-y: auto;
+  height: 100%;
 }
-
 main section#container article figure > img {
   width: 20%;
   border-radius: 4px;
 }
-
 main section#container article h6 {
-  color: #747474;
   font-size: 17px;
 }
-
 main section#container article h5 {
   color: #333;
 }
-
 main section#container article a {
   background-color: #ececec;
   padding: 8px;
@@ -204,12 +171,15 @@ main section#container article a {
   display: inline-block;
   margin: 10px 0px;
 }
-
 main section#container article a:hover {
   background-color: #c5c5c5;
 }
-
 main section#container article a > i {
   margin: 0px 15px;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 992px) {
+  * {
+    overflow-y: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

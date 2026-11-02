@@ -21,7 +21,7 @@
 
     <header>
 
-        <h1>MailBox</h1>
+        <h1 id="heading"></h1>
 
     </header>
 
@@ -35,15 +35,16 @@
 
             <!-- ___________aside________________ -->
 
-            <aside class="col-md-3 p-0">
+            <aside class="col-lg-2 p-0">
 
                 <div id="w3s">
 
-                    <img src="images/w3schools.png" alt="W3schools" title="W3schools">
+                    <img id="picw3s" src="" alt="">
 
                 </div>
 
 
+                <!-- ________________modal__________________ -->
 
                 <nav>
 
@@ -53,7 +54,6 @@
 
                             <!-- Button trigger modal -->
                             <section type="button" id="modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                New Message<i class="bi bi-pen-fill"></i>
                             </section>
 
                             <!-- Modal -->
@@ -63,8 +63,8 @@
                                     <div class="modal-content">
                                         <div class="modal-header modal-head">
                                             <h1 class="modal-title" id="exampleModalLabel">Send Mail</h1>
-                                            <button type="button" class="btn-close btn-close-white button-close"  data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                            <button type="button" class="btn-close btn-close-white button-close"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <label class="" for="to">To</label>
@@ -86,66 +86,72 @@
                                 </div>
                             </div>
                         </li>
+
+                        <!-- _______________accordion_______________ -->
+
                         <li>
 
 
                             <div class="accordion accord" id="accordionExample">
-                                <div class="accordion-item">
+                                <div class="accordion-item rounded-0">
                                     <h2 class="accordion-header">
-                                        <button class="button-accord accordion-button button-accordion" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <i class="bi bi-inbox-fill me-2"></i>Inbox (3)
+                                        <button id="accordn" class="button-accord accordion-button button-accordion rounded-0"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                    <div id="collapseOne" class="accordion-collapse  collapse show"
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body p-0">
 
-                                            <a href="#">
+                                            <a onclick="showmail(0)" href="#">
 
-                                                <div id="borgemail" class="mailbox">
+                                                <div id="mailmembers" class="mailbox">
 
                                                     <div>
 
-                                                        <img src="images/avatar3.png" alt="avatar.3" title="avatar.3">
-                                                        <h5>Borge Refsnes</h5>
+                                                        <img id="picone" src="" alt="" title="">
+                                                        <h5 id="nameone"></h5>
+
                                                     </div>
 
-                                                    <p>Subject: Remember Me</p>
-                                                    <p>Hello, I just wanted to let you know that I'll be home at...
-                                                    </p>
+                                                    <p id="subjectone"></p>
+                                                    <p id="paraone"></p>
                                                 </div>
 
                                             </a>
 
-                                            <a href="#">
+                                            <a onclick="showmail(1)" href="#">
 
-                                                <div class="mailbox">
+                                                <div id="mailmembers" class="mailbox">
 
                                                     <div>
 
-                                                        <img src="images/avatar5.png" alt="avatar.5" title="avatar.5">
-                                                        <h5>Jane Doe</h5>
+                                                        <img id="pictwo" src="" alt="" title="">
+                                                        <h5 id="nametwo"></h5>
+
                                                     </div>
 
-                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...
-                                                    </p>
+                                                    <p id="subjecttwo"></p>
+                                                    <p id="paratwo"></p>
                                                 </div>
 
                                             </a>
 
-                                            <a href="#">
+                                            <a onclick="showmail(2)" href="#">
 
-                                                <div class="mailbox">
+                                                <div id="mailmembers" class="mailbox">
 
                                                     <div>
 
-                                                        <img src="images/avatar2.png" alt="avatar.2" title="avatar.2">
-                                                        <h5>John Doe</h5>
+                                                        <img id="picthree" src="" alt="" title="">
+                                                        <h5 id="namethree"></h5>
+
                                                     </div>
 
-                                                    <p>Welcome!</p>
+                                                    <p id="subjectthree"></p>
+                                                    <p id="parathree"></p>
                                                 </div>
 
                                             </a>
@@ -164,19 +170,19 @@
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body p-0">
 
-                                            <a href="#">
+                                            <a onclick="showmail(0)" href="#">
 
-                                                <div class="mailbox">
+                                                <div id="mailmembers" class="mailbox">
 
                                                     <div>
 
-                                                        <img src="images/avatar3.png" alt="avatar.3" title="avatar.3">
-                                                        <h5>Borge Refsnes</h5>
+                                                        <img id="picfour" src="" alt="" title="">
+                                                        <h5 id="namefour"></h5>
+
                                                     </div>
 
-                                                    <p>Subject: Remember Me</p>
-                                                    <p>Hello, I just wanted to let you know that I'll be home at...
-                                                    </p>
+                                                    <p id="subjectfour"></p>
+                                                    <p id="parafour"></p>
                                                 </div>
 
                                             </a>
@@ -196,18 +202,19 @@
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body p-0">
 
-                                            <a href="#">
+                                            <a onclick="showmail(1)" href="#">
 
-                                                <div class="mailbox">
+                                                <div id="mailmembers" class="mailbox">
 
                                                     <div>
 
-                                                        <img src="images/avatar5.png" alt="avatar.5" title="avatar.5">
-                                                        <h5>Jane Doe</h5>
+                                                        <img id="picfive" src="" alt="" title="">
+                                                        <h5 id="namefive"></h5>
+
                                                     </div>
 
-                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...
-                                                    </p>
+                                                    <p id="subjectfive"></p>
+                                                    <p id="parafive"></p>
                                                 </div>
 
                                             </a>
@@ -215,9 +222,9 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-item">
+                                <div class="accordion-item rounded-0">
                                     <h2 class="accordion-header">
-                                        <button class="button-accord accordion-button button-accordion collapsed"
+                                        <button class="button-accord accordion-button button-accordion collapsed rounded-0"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour"
                                             aria-expanded="false" aria-controls="collapsefour">
                                             <i class="bi bi-trash3-fill"></i>Trash
@@ -227,18 +234,19 @@
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body p-0">
 
-                                            <a href="#">
+                                            <a onclick="showmail(2)" href="#">
 
-                                                <div class="mailbox">
+                                                <div id="mailmembers" class="mailbox">
 
                                                     <div>
 
-                                                        <img src="images/avatar2.png" alt="avatar.2" title="avatar.2">
-                                                        <h5>Jane Doe</h5>
+                                                        <img id="picsix" src="" alt="" title="">
+                                                        <h5 id="namesix"></h5>
+
                                                     </div>
 
-                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...
-                                                    </p>
+                                                    <p id="subjectsix"></p>
+                                                    <p id="parasix"></p>
                                                 </div>
 
                                             </a>
@@ -252,42 +260,30 @@
 
             </aside>
 
-            <!-- __________article____________ -->
+            <!-- _____________________article_______________________ -->
 
-            <article class="col-md-9">
+            <article class="col-lg-10">
 
                 <figure>
-                    <img src="images/avatar3.png" alt="Picture" title="Picture">
+                    <img id="photo" src="" alt="Picture" title="Picture">
                 </figure>
 
-                <h6>Subject: Remember Me</h6>
+                <h6 id="mailsubject"></h6>
 
-                <h5><i class="bi bi-clock"></i> From Borge Refsnes, Sep 27, 2026.</h5>
+                <h5 id="date"><i class="fa-regular fa-clock"></i></h5>
 
-                <a href="#">Reply<i class="bi bi-reply-fill"></i></a>
+                <a href="#" id="reply"></a>
 
-                <a href="#">Forward<i class="bi bi-forward-fill"></i></a>
+                <a href="#" id="forward"></a>
 
                 <hr>
 
-                <p>Hello, I just wanted to let you know that I'll be home at lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <p id="parag"></p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p id="desc"></p>
 
-                <p>Best Regards,</p>
+                <p id="info"></p>
 
-                <p>Borge Refsnes</p>
 
             </article>
         </section>
@@ -302,6 +298,8 @@
     <!-- ___________Script!!!_____________ -->
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="scripts/scripts.js"></script>
 
 </body>
 
